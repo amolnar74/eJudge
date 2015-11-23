@@ -5,23 +5,24 @@
    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="startup.gif" rel="apple-touch-startup-image" />    
     <link href="homescreen.gif" rel="apple-touch-icon" />
+    <script src="./dist/js/jquery.js"></script>                                   
 		<title>eJudge</title>
 </head>
 <body style='margin:0px'>
-  <iframe src='init.php' width=100% height=100% border=1 id='main' ></iframe>
+   <div id=cesta></div>
+  <iframe src='init.php' width=100% height=80% border=1 id='main' ></iframe>
 </body>
 <script>
   function getApp()
   {
     var app = 'init.php';
-    if (localStorage.getItem('eJudgeApp')!= null && localStorage.getItem('eJudgeApp')!='')
-      app = localStorage.getItem('eJudgeApp');
+    if (window.localStorage.getItem('eJudgeApp')!= null && window.localStorage.getItem('eJudgeApp')!='')
+      app = window.localStorage.getItem('eJudgeApp');
   
-   alert(app);
     return app;
   }
   
-  document.getElementById('main').src = getApp();   
-
+  $('#cesta').html(getApp());   
+  $('#main').attr('src',getApp());   
 </script>
 </html>
