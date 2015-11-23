@@ -17,9 +17,11 @@
     if (localStorage.getItem('eJudgeApp')!= null && localStorage.getItem('eJudgeApp')!='')
       app = localStorage.getItem('eJudgeApp');
   
+   alert(app);
     return app;
   }
   
   document.getElementById('main').src = getApp();   
+
 </script>
 </html>
