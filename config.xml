@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.alunny.amazing"
+	id		= "com.amolnar.eJudge"
 	version 	= "1.0.0">
 
-	<name>alunnys Amazing App</name>
+	<name>eJudge</name>
 
 	<description>
-		An Amazing app by alunny
+		eJudge for RG & AGG
 	</description>
 
-	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+	<author href="http://rgform.eu"
+		email="info.rgform@gmail.com">
+		Attila Molnar
 	</author>
 
 	<gap:platforms>
@@ -26,7 +26,6 @@
 
     <gap:splash src="weirdo.png" />
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
 	<!-- sample preference specification -->
