@@ -1,6 +1,5 @@
-PhoneGap-Start
+eJudge
 ---
 
-A starting point for PhoneGap apps.
+test apps..
 
-To get started: fork this repo, modify the config.xml to match your details, and get building!
