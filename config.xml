@@ -27,7 +27,7 @@
     <gap:splash src="weirdo.png" />
 	<feature name="http://api.phonegap.com/1.0/network"/>
 <access origin="*" />
-<plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
+<gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
 <!-- sample preference specification -->
 	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
 </widget>
