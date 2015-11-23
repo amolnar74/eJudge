@@ -1,27 +1,25 @@
 <html>
-<head>
-    <meta content="yes" name="apple-mobile-web-app-capable" />
- 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="startup.gif" rel="apple-touch-startup-image" />    
-    <link href="homescreen.gif" rel="apple-touch-icon" />
-    <script src="./dist/js/jquery.js"></script>                                   
-		<title>eJudge</title>
-</head>
-<body style='margin:0px'>
-   <div id=cesta></div>
-</body>
-<script>
-  function getApp()
-  {
-    var app = 'init.php';
-    if (window.localStorage.getItem('eJudgeApp')!= null && window.localStorage.getItem('eJudgeApp')!='')
-      app = window.localStorage.getItem('eJudgeApp');
-  
-    return app;
-  }
-  
-  $('#cesta').html(getApp());   
-  document.location.href = getApp();
-</script>
+  <head>
+    <title>InAppBrowser.addEventListener Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+         var ref = window.open('http://apache.org', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+         ref.addEventListener('exit', function() { alert(event.type); });
+    }
+
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
