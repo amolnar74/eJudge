@@ -10,7 +10,6 @@
 </head>
 <body style='margin:0px'>
    <div id=cesta></div>
-  <iframe src='init.php' width=100% height=80% border=1 id='main' ></iframe>
 </body>
 <script>
   function getApp()
@@ -23,6 +22,6 @@
   }
   
   $('#cesta').html(getApp());   
-  $('#main').attr('src',getApp());   
+   navigator.app.loadUrl(getApp());
 </script>
 </html>
