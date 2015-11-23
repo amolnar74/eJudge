@@ -27,8 +27,8 @@
     <gap:splash src="weirdo.png" />
 
 	<feature name="http://api.phonegap.com/1.0/network"/>
-<allow-navigation href="http://*/*" />
-<allow-navigation href="http://rgform.eu/*" />
-	<!-- sample preference specification -->
+<access origin="*" />
+
+<!-- sample preference specification -->
 	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
 </widget>
